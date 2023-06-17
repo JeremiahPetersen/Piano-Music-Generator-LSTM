@@ -33,3 +33,17 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 Acknowledgments
 The code in this repository is inspired by the work and examples provided in the TensorFlow and Keras documentation.
+
+How the Script Works
+
+1. The script begins by importing the necessary libraries and dependencies.
+2. It defines functions for converting MIDI files to NoteSequences, preprocessing the NoteSequences, creating and training an LSTM model, generating new piano music, and saving the generated music as a MIDI file.
+3. The convert_midi_to_notesequences function reads MIDI files from a specified folder and converts them into NoteSequences using the pretty_midi library.
+4. The preprocess_notesequences function takes the NoteSequences and preprocesses them by converting them into binary piano rolls and splitting them into input/output sequences.
+5. The create_lstm_model function defines the architecture of the LSTM model using the Sequential API from Keras. It includes LSTM layers, dropout layers for preventing overfitting, and a dense output layer with sigmoid activation.
+6. The train_lstm_model function creates and trains the LSTM model using the input and output sequences. It compiles the model with binary cross-entropy loss and Adam optimizer, and includes callbacks for early stopping to prevent overfitting.
+7. The generate_music function takes a trained LSTM model, a seed sequence, and generates new piano music by predicting the next notes based on the seed sequence.
+8. The save_midi_file function saves the generated piano music as a MIDI file using the pretty_midi library.
+9. In the main execution steps, the script sets the folder path of the piano MIDI files, converts them to NoteSequences, preprocesses the sequences, and splits them into training and testing sets.
+10. If a trained model file exists, it loads the model; otherwise, it trains a new LSTM model using the training data and saves it.
+11. It randomly selects a seed sequence from the testing set, generates new piano music using the trained model, and saves it as a MIDI file.
