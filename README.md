@@ -12,8 +12,6 @@ sklearn
 tensorflow
 You can install these libraries using the following command:
 
-shell
-Copy code
 pip install numpy pretty_midi fluidsynth scikit-learn tensorflow
 Usage
 Set the folder path containing the MIDI files you want to use for training. The MIDI files will be converted into NoteSequences using the convert_midi_to_notesequences function.
