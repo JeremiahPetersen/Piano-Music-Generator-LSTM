@@ -1,7 +1,7 @@
-Piano Music Generator using LSTM.
+# Piano Music Generator using LSTM
 This repository contains code for generating piano music using an LSTM neural network model. The code utilizes MIDI files as input data and implements functions for data preprocessing, model creation, training, and music generation.
 
-Installation
+# Installation
 To run the code, you need to have the following libraries installed:
 
 os
@@ -15,7 +15,7 @@ You can install these libraries using the following command:
 
 pip install numpy pretty_midi fluidsynth scikit-learn tensorflow
 
-Usage
+# Usage
 Set the folder path containing the MIDI files you want to use for training. The MIDI files will be converted into NoteSequences using the convert_midi_to_notesequences function.
 
 Preprocess the NoteSequences by converting them into binary piano rolls and splitting them into input/output sequences. You can specify the sequence length using the preprocess_notesequences function.
@@ -28,13 +28,13 @@ Generate new piano music using the trained LSTM model and a seed sequence. Use t
 
 Save the generated music as a MIDI file using the save_midi_file function. Provide the piano roll, output file path, and sampling rate.
 
-License
+# License
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Acknowledgments
+# Acknowledgments
 The code in this repository is inspired by the work and examples provided in the TensorFlow and Keras documentation.
 
-How the Script Works
+# How the Script Works
 
 1. The script begins by importing the necessary libraries and dependencies.
 2. It defines functions for converting MIDI files to NoteSequences, preprocessing the NoteSequences, creating and training an LSTM model, generating new piano music, and saving the generated music as a MIDI file.
