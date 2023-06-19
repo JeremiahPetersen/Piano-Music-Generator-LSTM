@@ -29,7 +29,7 @@ Generate new piano music using the trained LSTM model and a seed sequence. Use t
 Save the generated music as a MIDI file using the save_midi_file function. Provide the piano roll, output file path, and sampling rate.
 
 # License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License.
 
 # Acknowledgments
 The code in this repository is inspired by the work and examples provided in the TensorFlow and Keras documentation.
